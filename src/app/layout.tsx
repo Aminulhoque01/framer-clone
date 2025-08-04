@@ -6,7 +6,7 @@ import { Roboto_Mono } from "next/font/google";
 import { ConfigProvider } from "antd";
 
 export const metadata: Metadata = {
-  title: "10 minutes-school ||Ghore bose spoken English",
+  title: "Troscan||troscan-clone",
   description: "Find the perfect job opportunity that matches your skills and experience. Browse job listings, apply with ease, and take the next step in your career.",
 };
 const robotoMono = Roboto_Mono({
