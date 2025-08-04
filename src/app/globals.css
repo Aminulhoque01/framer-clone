@@ -1,2 +1,19 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+@keyframes zoom {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.animate-zoom {
+    animation: zoom 6s ease-out infinite;
+}
