@@ -10,7 +10,6 @@ const Navbar = ({ setIsMobileMenuOpen }) => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpenLocal((prev) => {
       const newState = !prev;
-      // Only call the parent prop if it exists
       if (setIsMobileMenuOpen) {
         setIsMobileMenuOpen(newState);
       }
@@ -28,7 +27,7 @@ const Navbar = ({ setIsMobileMenuOpen }) => {
   return (
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }} // Changed to animate for fixed navbar
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
       className="bg-[#F8EDE3] fixed top-5 z-50 rounded-xl left-0 right-0 max-w-3xl mx-auto text-[#5C4033]"
     >
@@ -38,8 +37,8 @@ const Navbar = ({ setIsMobileMenuOpen }) => {
           <Link href="/">Troscán</Link>
         </div>
 
-        {/* Desktop Menu - Hidden on Mobile */}
-        <div className="hidden md:flex space-x-4">
+        {/* Desktop Menu - Centered Links */}
+        <div className="hidden md:flex flex-1 justify-center items-center space-x-4">
           {navLinks.slice(0, -1).map((link) => (
             <Link
               key={link.name}
@@ -49,6 +48,10 @@ const Navbar = ({ setIsMobileMenuOpen }) => {
               {link.name}
             </Link>
           ))}
+        </div>
+
+        {/* Desktop Contact Us Button - Right Side */}
+        <div className="hidden md:flex items-center">
           <Link
             href={navLinks[3].href}
             className="bg-[#B85842] text-white px-4 py-2 rounded-md hover:bg-[#4A3528] font-bold text-[16px]"
