@@ -1,7 +1,6 @@
-// pages/index.js
 import Head from 'next/head';
 import Image from 'next/image';
-import bannerImg from '@/app/assets/drowing.avif'; // Import the image
+import bannerImg from '@/assets/about/drowing.avif'; // Import the image
 
 export default function Troscain() {
     return (
