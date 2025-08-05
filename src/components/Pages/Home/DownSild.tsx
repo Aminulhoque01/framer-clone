@@ -49,7 +49,7 @@ export default function SildImage() {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 h-full bg-cover bg-center transition-all duration-900 ease-in-out ${
+            className={`absolute inset-0 h-full bg-cover bg-center transition-all duration-1900 ease-in-out ${
               index === activeImageIndex
                 ? 'opacity-100 transform translate-y-0'
                 : scrollDirection === 'down'

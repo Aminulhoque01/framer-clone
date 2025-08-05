@@ -5,6 +5,7 @@
 import SildImage from "@/components/Pages/Home/DownSild";
 import HeroSection from "@/components/Pages/Home/HeroSection";
 import ImageSection from "@/components/Pages/Home/ImageSection";
+import SideImage from "@/components/Pages/Home/Sideimage";
 import Troscain from "@/components/Pages/Home/Troscain";
  
 
@@ -22,6 +23,7 @@ const Home = () => {
       <Troscain/>
       <ImageSection/>
       <SildImage  />
+      <SideImage />
       {/* Add more sections as needed */}
 
     </section>
