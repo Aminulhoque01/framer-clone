@@ -2,6 +2,7 @@
 
 
  
+import CardSection from "@/components/Pages/Home/CardSection";
 import SildImage from "@/components/Pages/Home/DownSild";
 import HeroSection from "@/components/Pages/Home/HeroSection";
 import ImageSection from "@/components/Pages/Home/ImageSection";
@@ -24,6 +25,7 @@ const Home = () => {
       <ImageSection/>
       <SildImage  />
       <SideImage />
+      <CardSection />
       {/* Add more sections as needed */}
 
     </section>
