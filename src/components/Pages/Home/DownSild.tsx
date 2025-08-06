@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Head from 'next/head';
+
 import sild1 from '@/assets/logo/sild1.avif';
 import sild2 from '@/assets/logo/sild2.avif';
 import sild3 from '@/assets/logo/sild3.avif';

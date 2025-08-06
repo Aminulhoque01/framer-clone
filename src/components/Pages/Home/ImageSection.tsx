@@ -10,6 +10,7 @@ import image3 from "@/assets/logo/image3.avif";
 import image4 from "@/assets/logo/image4.avif";
 import image5 from "@/assets/logo/image5.avif";
 import image6 from "@/assets/logo/image6.avif";
+import Image from 'next/image';
 
 // Debounce utility to limit state updates
 const debounce = (func: (...args: any[]) => void, wait: number | undefined) => {
@@ -53,9 +54,11 @@ const ImageSection = () => {
                     {!isGrid && (
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="relative w-full max-w-3xl">
-                                <img
+                                <Image
                                     src={image1.src}
                                     alt="Design 1"
+                                    width={300}
+                                    height={400}
                                     className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] h-auto rounded-lg shadow-md absolute top-0 left-1/2 transform -translate-x-1/2 transition-transform duration-500 ease-out"
                                     style={{ transform: isGrid ? 'translate(-50%, 100vh)' : 'translate(-50%, 0)' }}
                                 />
