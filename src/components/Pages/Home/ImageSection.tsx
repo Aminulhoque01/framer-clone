@@ -45,11 +45,10 @@ const ImageSection = () => {
         <div className="image-section bg-[#F8EDE3] pt-6 min-h-screen">
             <div className="text-center pt-8">
                 <div
-                    className={`container mx-auto px-4 py-8 transition-none mt-20 ${
-                        isGrid
+                    className={`container mx-auto px-4 py-8 transition-none mt-20 ${isGrid
                             ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6'
                             : 'relative h-[400px] sm:h-[500px] md:h-[600px]'
-                    }`}
+                        }`}
                 >
                     {!isGrid && (
                         <div className="absolute inset-0 flex items-center justify-center">
@@ -62,32 +61,47 @@ const ImageSection = () => {
                                     className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] h-auto rounded-lg shadow-md absolute top-0 left-1/2 transform -translate-x-1/2 transition-transform duration-500 ease-out"
                                     style={{ transform: isGrid ? 'translate(-50%, 100vh)' : 'translate(-50%, 0)' }}
                                 />
-                                <img
+                                <Image
                                     src={image2.src}
+
+                                    width={300}
+                                    height={400}
                                     alt="Design 2"
                                     className="w-full max-w-[180px] sm:max-w-[220px] md:max-w-[260px] h-auto rounded-lg shadow-md absolute top-16 sm:top-20 left-1/3 sm:left-1/4 transform -translate-x-1/2 transition-transform duration-500 ease-out"
                                     style={{ transform: isGrid ? 'translate(-50%, 100vh)' : 'translate(-50%, 0)' }}
                                 />
-                                <img
+                                <Image
                                     src={image3.src}
+
+                                    width={300}
+                                    height={400}
                                     alt="Design 3"
                                     className="w-full max-w-[180px] sm:max-w-[220px] md:max-w-[260px] h-auto rounded-lg shadow-md absolute top-24 sm:top-32 right-1/3 sm:right-1/4 transform translate-x-1/2 transition-transform duration-500 ease-out"
                                     style={{ transform: isGrid ? 'translate(50%, 100vh)' : 'translate(50%, 0)' }}
                                 />
-                                <img
+                                <Image
                                     src={image4.src}
+
+                                    width={300}
+                                    height={400}
                                     alt="Design 4"
                                     className="w-full max-w-[180px] sm:max-w-[220px] md:max-w-[260px] h-auto rounded-lg shadow-md absolute bottom-16 sm:bottom-20 left-1/3 transform -translate-x-1/2 transition-transform duration-500 ease-out"
                                     style={{ transform: isGrid ? 'translate(-50%, 100vh)' : 'translate(-50%, 0)' }}
                                 />
-                                <img
+                                <Image
                                     src={image5.src}
+
+                                    width={300}
+                                    height={400}
                                     alt="Design 5"
                                     className="w-full max-w-[180px] sm:max-w-[220px] md:max-w-[260px] h-auto rounded-lg shadow-md absolute bottom-8 sm:bottom-10 right-1/3 transform translate-x-1/2 transition-transform duration-500 ease-out"
                                     style={{ transform: isGrid ? 'translate(50%, 100vh)' : 'translate(50%, 0)' }}
                                 />
-                                <img
+                                <Image
                                     src={image6.src}
+
+                                    width={300}
+                                    height={400}
                                     alt="Design 6"
                                     className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] h-auto rounded-lg shadow-md absolute bottom-0 left-1/2 transform -translate-x-1/2 transition-transform duration-500 ease-out"
                                     style={{ transform: isGrid ? 'translate(-50%, 100vh)' : 'translate(-50%, 0)' }}
@@ -97,20 +111,29 @@ const ImageSection = () => {
                     )}
                     {isGrid && (
                         <>
-                            <img
+                            <Image
                                 src={image1.src}
+
+                                width={300}
+                                height={400}
                                 alt="Design 1"
                                 className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] h-auto rounded-lg shadow-md mx-auto transition-transform duration-700 ease-in-out transform hover:scale-105"
                                 style={{ transform: isGrid ? 'translateY(0)' : 'translateY(50px)', opacity: isGrid ? 1 : 0 }}
                             />
-                            <img
+                            <Image
                                 src={image2.src}
+
+                                width={300}
+                                height={400}
                                 alt="Design 2"
                                 className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] h-auto rounded-lg shadow-md mx-auto transition-transform duration-700 ease-in-out transform hover:scale-105"
                                 style={{ transform: isGrid ? 'translateY(0)' : 'translateY(50px)', opacity: isGrid ? 1 : 0 }}
                             />
-                            <img
+                            <Image
                                 src={image3.src}
+
+                                width={300}
+                                height={400}
                                 alt="Design 3"
                                 className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] h-auto rounded-lg shadow-md mx-auto transition-transform duration-700 ease-in-out transform hover:scale-105"
                                 style={{ transform: isGrid ? 'translateY(0)' : 'translateY(50px)', opacity: isGrid ? 1 : 0 }}
@@ -121,20 +144,29 @@ const ImageSection = () => {
                             >
                                 Transforming spaces with style, <br /> through Troscán's exquisite <br /> design expertise.
                             </div>
-                            <img
+                            <Image
                                 src={image4.src}
+
+                                width={300}
+                                height={400}
                                 alt="Design 4"
                                 className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] h-auto rounded-lg shadow-md mx-auto transition-transform duration-700 ease-in-out transform hover:scale-105"
                                 style={{ transform: isGrid ? 'translateY(0)' : 'translateY(50px)', opacity: isGrid ? 1 : 0 }}
                             />
-                            <img
+                            <Image
                                 src={image5.src}
+
+                                width={300}
+                                height={400}
                                 alt="Design 5"
                                 className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] h-auto rounded-lg shadow-md mx-auto transition-transform duration-700 ease-in-out transform hover:scale-105"
                                 style={{ transform: isGrid ? 'translateY(0)' : 'translateY(50px)', opacity: isGrid ? 1 : 0 }}
                             />
-                            <img
+                            <Image
                                 src={image6.src}
+
+                                width={300}
+                                height={400}
                                 alt="Design 6"
                                 className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] h-auto rounded-lg shadow-md mx-auto transition-transform duration-700 ease-in-out transform hover:scale-105"
                                 style={{ transform: isGrid ? 'translateY(0)' : 'translateY(50px)', opacity: isGrid ? 1 : 0 }}
