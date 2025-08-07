@@ -1,3 +1,5 @@
+"use client"
+
 import Head from 'next/head';
 import Image from 'next/image';
 import about1 from '@/assets/about/hTZXDyZnJxuZxbdwIztBbCgMYQ.avif';
@@ -8,9 +10,24 @@ import about5 from '@/assets/about/about5.avif'
 import about6 from '@/assets/about/about6.avif'
 import about7 from '@/assets/about/about7.avif'
 import about8 from '@/assets/about/about8.avif'
+import side1 from '@/assets/sideLogo/side1.avif';
+import side2 from '@/assets/sideLogo/side2.avif';
+import side3 from '@/assets/sideLogo/side3.avif';
+import side4 from '@/assets/sideLogo/side4.avif';
+import side5 from '@/assets/sideLogo/side5.avif';
+import side6 from '@/assets/sideLogo/side6.avif';
+import { useState } from 'react';
 
 
 export default function About() {
+
+    const [hoverImage, setHoverImage] = useState(side2);
+
+    const handleMouseEnter = (index: number) => {
+        const images = [side1, side2, side3, side4, side5, side6];
+        setHoverImage(images[index % images.length]);
+    };
+
     return (
         < div className='' >
 
@@ -166,6 +183,138 @@ export default function About() {
                             </div>
                         </div>
                     </div>
+
+                    <div>
+                        <div className="flex mt-20 mb-10 justify-center items-center">
+                            <h1 className="text-3xl md:text-5xl font-bold text-[#8D493A] mb-6 text-center">
+                                Selecting the ideal <br /> elements to elevate <br /> your space
+                            </h1>
+                        </div>
+
+                        <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8">
+                            {/* Image Section - Centered */}
+                            <div className="w-full md:w-1/2 flex justify-center">
+                                <div className="bg-gray-300 rounded-lg overflow-hidden max-w-[500px]">
+                                    <Image
+                                        src={hoverImage}
+                                        alt="Interior Design"
+                                        width={500}
+                                        height={500}
+                                        className="w-[579] h-[600px] object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Text Section - Right */}
+                            <div className="w-full md:w-1/2 text-left">
+                                <ul className="space-y-4 text-brown-700">
+                                    <li
+                                        className="border-b border-brown-300 pb-2 hover:bg-[#8D493A] text-[#8D493A] p-2 hover:text-white transition-colors duration-300"
+                                        onMouseEnter={() => handleMouseEnter(0)}
+                                    >
+                                        01. Custom Furniture Design
+                                    </li>
+                                    <li
+                                        className="border-b border-brown-300 pb-2 hover:bg-[#8D493A] text-[#8D493A] p-2 hover:text-white transition-colors duration-300"
+                                        onMouseEnter={() => handleMouseEnter(1)}
+                                    >
+                                        02. Room Decoration & Styling
+                                    </li>
+                                    <li
+                                        className="border-b border-brown-300 pb-2 hover:bg-[#8D493A] text-[#8D493A] p-2 hover:text-white transition-colors duration-300"
+                                        onMouseEnter={() => handleMouseEnter(2)}
+                                    >
+                                        03. Space Planning & Interior Layout
+                                    </li>
+                                    <li
+                                        className="border-b border-brown-300 pb-2 hover:bg-[#8D493A] text-[#8D493A] p-2 hover:text-white transition-colors duration-300"
+                                        onMouseEnter={() => handleMouseEnter(3)}
+                                    >
+                                        04. Home Renovations & Remodeling
+                                    </li>
+                                    <li
+                                        className="border-b border-brown-300 pb-2 hover:bg-[#8D493A] text-[#8D493A] p-2 hover:text-white transition-colors duration-300"
+                                        onMouseEnter={() => handleMouseEnter(4)}
+                                    >
+                                        05. Lighting Design
+                                    </li>
+                                    <li
+                                        className="border-b border-brown-300 pb-2 hover:bg-[#8D493A] text-[#8D493A] p-2 hover:text-white transition-colors duration-300"
+                                        onMouseEnter={() => handleMouseEnter(5)}
+                                    >
+                                        06. Virtual Interior Design Consultations
+                                    </li>
+                                </ul>
+                                <p className="text-sm text-[#8D493A]  mt-4">• Our Expertise</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="  font-sans mt-20 text-[#8D493A]">
+                        <div className="container mx-auto p-6">
+                            <div className="text-center">
+                                <p className="text-sm text-brown-600">• Why Us?</p>
+                                <h1 className="text-4xl font-bold text-brown-700 mt-2">
+                                    Elevate Your Space with <br /> Expertise & Elegance
+                                </h1>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+                                <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                                    <div className="w-12 h-12 bg-brown-100 rounded-full mx-auto flex items-center justify-center mb-4">
+                                        <span className="text-brown-600">✂️</span>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-brown-700">
+                                        Tailored Designs for Every Space
+                                    </h3>
+                                    <p className="mt-2 text-gray-600">
+                                        We believe every space is unique, and so should be its design. Our
+                                        bespoke solutions are crafted to reflect your personality, needs,
+                                        and lifestyle.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                                    <div className="w-12 h-12 bg-brown-100 rounded-full mx-auto flex items-center justify-center mb-4">
+                                        <span className="text-brown-600">🔍</span>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-brown-700">
+                                        Attention to Every Detail
+                                    </h3>
+                                    <p className="mt-2 text-gray-600">
+                                        From the finest furniture to the perfect accents, we meticulously
+                                        focus on every detail to ensure flawless results.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                                    <div className="w-12 h-12 bg-brown-100 rounded-full mx-auto flex items-center justify-center mb-4">
+                                        <span className="text-brown-600">🤝</span>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-brown-700">
+                                        Seamless Collaboration
+                                    </h3>
+                                    <p className="mt-2 text-gray-600">
+                                        Your vision is our priority. We work closely with you at every
+                                        step, combining your ideas with our expertise to create spaces
+                                        you'll love.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                                    <div className="w-12 h-12 bg-brown-100 rounded-full mx-auto flex items-center justify-center mb-4">
+                                        <span className="text-brown-600">⏳</span>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-brown-700">
+                                        Timeless Elegance
+                                    </h3>
+                                    <p className="mt-2 text-gray-600">
+                                        Our designs go beyond trends to create spaces that stand the test
+                                        of time, offering a perfect blend of style, comfort, and
+                                        functionality.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
         </div>

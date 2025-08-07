@@ -2,10 +2,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+TROSCAN-CLONE WEBSITE
 
 ```bash
-npm run dev
+npm run dev   RUN THIS WEBSITE
+
+
 # or
 yarn dev
 # or
