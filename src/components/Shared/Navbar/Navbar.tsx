@@ -25,7 +25,8 @@ const Navbar = ({ setIsMobileMenuOpen }: NavbarProps) => {
     { name: "About", href: "/about" },
     { name: "Projects", href: "/project" },
     { name: "News", href: "/news" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact", href: "/contact" },
+   
   ];
 
   return (
