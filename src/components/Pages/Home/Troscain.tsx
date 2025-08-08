@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import bannerImg from '@/assets/about/drowing.avif'; // Import the image
+import bannerImg from '@/assets/about/drowing.avif'; // Ensure this path is correct
 
 export default function Troscain() {
     return (
@@ -29,7 +29,7 @@ export default function Troscain() {
                     <br />
                     <div className='mt-20'>
                         <p className="text-[#8D493A] mb-6 mt-10">
-                            At Troscain, we believe that every space has a story to tell. A premier furniture design and room decorating agency. Our expert team blends timeless craftsmanship with innovative designs, ensuring each piece and layout reflects your unique taste and lifestyle. Whether you're looking to reimagine your living room...
+                            At Troscain, we believe that every space has a story to tell. A premier furniture design and room decorating agency. Our expert team blends timeless craftsmanship with innovative designs, ensuring each piece and layout reflects your unique taste and lifestyle. Whether you&apos;re looking to reimagine your living room...
                         </p>
                         <button className="bg-[#B85842] text-white px-6 py-3 rounded hover:bg-[#D85842] font-bold text-lg transition-colors duration-300">
                             More About us
@@ -41,14 +41,12 @@ export default function Troscain() {
                     <Image
                         src={bannerImg}
                         alt="Interior Design"
-                        width={857} // Adjust based on image size
-                        height={659} // Adjust based on image size
-                        className="rounded-lg shadow-lg hover: animate-zoom"
+                        width={857}
+                        height={659}
+                        className="rounded-lg shadow-lg hover:animate-zoom"
                     />
                 </div>
             </div>
         </div>
     );
 }
-
-

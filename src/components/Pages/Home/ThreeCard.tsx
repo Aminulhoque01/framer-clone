@@ -1,6 +1,7 @@
 import chair from "@/assets/sideLogo/chair.avif";
 import sofa from "@/assets/sideLogo/bed.avif";
 import table from "@/assets/sideLogo/bed2.avif";
+import Image from "next/image";
 
 export default function ThreeCard() {
   return (
@@ -18,8 +19,11 @@ export default function ThreeCard() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-8">
         <div className="p-2">
-          <img
+          <Image
             src={chair.src}
+
+            width={300}
+            height={400}
             alt="Minimalist Interiors"
             className="w-full h-64 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110"
           />
@@ -32,8 +36,11 @@ export default function ThreeCard() {
           </p>
         </div>
         <div className="p-2">
-          <img
+          <Image
             src={sofa.src}
+
+            width={300}
+            height={400}
             alt="Timeless Furniture"
             className="w-full h-64 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110"
           />
@@ -46,8 +53,11 @@ export default function ThreeCard() {
           </p>
         </div>
         <div className="p-2">
-          <img
+          <Image
             src={table.src}
+
+            width={300}
+            height={400}
             alt="Psychology in Interior Design"
             className="w-full h-64 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110"
           />

@@ -1,8 +1,3 @@
-
-
-
-
-
 import { useEffect, useState } from 'react';
 import image1 from "@/assets/logo/image1.avif";
 import image2 from "@/assets/logo/image2.avif";
@@ -13,11 +8,11 @@ import image6 from "@/assets/logo/image6.avif";
 import Image from 'next/image';
 
 // Debounce utility to limit state updates
-const debounce = (func: (...args: any[]) => void, wait: number | undefined) => {
-    let timeout: string | number | NodeJS.Timeout | undefined;
-    return (...args: any[]) => {
+const debounce = (func: () => void, wait: number) => {
+    let timeout: NodeJS.Timeout | undefined;
+    return () => {
         clearTimeout(timeout);
-        timeout = setTimeout(() => func(...args), wait);
+        timeout = setTimeout(() => func(), wait);
     };
 };
 
@@ -63,7 +58,6 @@ const ImageSection = () => {
                                 />
                                 <Image
                                     src={image2.src}
-
                                     width={300}
                                     height={400}
                                     alt="Design 2"
@@ -72,7 +66,6 @@ const ImageSection = () => {
                                 />
                                 <Image
                                     src={image3.src}
-
                                     width={300}
                                     height={400}
                                     alt="Design 3"
@@ -81,7 +74,6 @@ const ImageSection = () => {
                                 />
                                 <Image
                                     src={image4.src}
-
                                     width={300}
                                     height={400}
                                     alt="Design 4"
@@ -90,7 +82,6 @@ const ImageSection = () => {
                                 />
                                 <Image
                                     src={image5.src}
-
                                     width={300}
                                     height={400}
                                     alt="Design 5"
@@ -99,7 +90,6 @@ const ImageSection = () => {
                                 />
                                 <Image
                                     src={image6.src}
-
                                     width={300}
                                     height={400}
                                     alt="Design 6"
@@ -113,7 +103,6 @@ const ImageSection = () => {
                         <>
                             <Image
                                 src={image1.src}
-
                                 width={300}
                                 height={400}
                                 alt="Design 1"
@@ -122,7 +111,6 @@ const ImageSection = () => {
                             />
                             <Image
                                 src={image2.src}
-
                                 width={300}
                                 height={400}
                                 alt="Design 2"
@@ -131,7 +119,6 @@ const ImageSection = () => {
                             />
                             <Image
                                 src={image3.src}
-
                                 width={300}
                                 height={400}
                                 alt="Design 3"
@@ -142,11 +129,10 @@ const ImageSection = () => {
                                 className="text-center mt-6 sm:mt-8 md:mt-10 text-[#B85842] text-lg sm:text-xl md:text-2xl font-semibold transition-opacity duration-700 ease-in-out col-span-full px-4"
                                 style={{ opacity: isGrid ? 1 : 0 }}
                             >
-                                Transforming spaces with style, <br /> through Troscán's exquisite <br /> design expertise.
+                                Transforming spaces with style, <br /> through Troscán&apos;s exquisite <br /> design expertise.
                             </div>
                             <Image
                                 src={image4.src}
-
                                 width={300}
                                 height={400}
                                 alt="Design 4"
@@ -155,7 +141,6 @@ const ImageSection = () => {
                             />
                             <Image
                                 src={image5.src}
-
                                 width={300}
                                 height={400}
                                 alt="Design 5"
@@ -164,7 +149,6 @@ const ImageSection = () => {
                             />
                             <Image
                                 src={image6.src}
-
                                 width={300}
                                 height={400}
                                 alt="Design 6"
