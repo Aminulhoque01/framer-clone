@@ -23,7 +23,7 @@ const Navbar = ({ setIsMobileMenuOpen }: NavbarProps) => {
 
   const navLinks = [
     { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
+    { name: "Projects", href: "/project" },
     { name: "News", href: "/news" },
     { name: "Contact Us", href: "/contact" },
   ];
