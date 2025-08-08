@@ -9,7 +9,7 @@ import news6 from '@/assets/news/news6.avif';
 const News = () => {
   return (
     <div className="min-h-screen bg-[#F8EDE3] flex flex-col items-center justify-center p-6 pb-10">
-      <h1 className="text-4xl font-bold text-[#8D493A] mb-8 ">Expert Insights and <br /> Design Inspiration</h1>
+      <h1 className="text-4xl font-bold text-[#8D493A] mb-8 mt-20 pt-20">Expert Insights and <br /> Design Inspiration</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
           { src: news1, alt: 'Design 1', title: 'How to Choose the Perfect Lighting', date: 'June 4, 2023' },
